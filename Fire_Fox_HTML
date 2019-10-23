@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--
+    .
+  .o8
+.odin8o  .odino.  oo.ooooo.
+  888   d88' `88b  888' `88b
+  888   888   888  888   888
+  888 . 888   888  888   888
+  "888" `Y8odinP'  888bod8P'
+                   888
+                  odin!
+
+
+Our full stack curriculum is free and supported by a passionate open source community. Do you want to contribute? Chat with us at https://discord.gg/hvqVr6d
+-->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"17c82925e3","applicationID":"2418536","transactionName":"d1xcEEpcDg1RS05DRVFBQUtLWw0W","queueTime":5,"applicationTime":195,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Odin Project empowers aspiring web developers to learn together">
+  <meta name="keywords" content="learn web development, learn ruby on rails, ruby on rails, ruby, rails">
+  <meta property="og:image" content="https://www.theodinproject.com/assets/og-logo-003bdac3098010b4f1143000a941b80c67eebd74fbc6f36b2e7ef92dd03e8020.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <title>
+    Dashboard | The Odin Project
+  </title>
+
+  <link rel="stylesheet" media="all" href="/assets/application-f3bc8f7af4d431d5101cd5b628e8a85de43a77db7f9942acd781482cdfe08d44.css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic|Open+Sans:300,300italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="/assets/application-fd8d78c53996df472279eb7f9022a75689ff37d3ff92dc6007f81f12eefb8920.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="pOv/usoMNedQTtL1ulbJA/aUR6pTVCaBPd1Kj2BStMRkW0gmfL1TKMR4Zl6hbQm5rA+/CxH6fhUG24vMG1bVwA==" />
+</head>
+
+
+  <body>
+    <div id="global-content-wrapper">
+      <div id="navbar-supported-content" class="modal modal-fullscreen-menu fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="navbar-brand">
+          <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+        </div>
+        <button aria-label="Close" type="button" class="close" data-dismiss="modal">
+          <span class="sr-only">Close navigation</span>
+          <span class="close-icon">&times;</span>
+        </button>
+      </div>
+      <ul class="modal-links">
+          <li class="nav-item active">
+            <a class="nav-link" href="/dashboard?ref=homenav">Dashboard</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/tracks/3">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://forum.theodinproject.com">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gitter-chat-link" target="_blank" rel="noreferrer" href="https://discord.gg/hvqVr6d">Chat</a>
+          </li>
+
+          <div class="dropdown-divider"></div>
+          <li class="nav-item ">
+            <a class="nav-link" href="/users/edit">Settings</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/logout?ref=homenav">Log Out</a>
+          </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-expand-md navbar-light">
+  <div class="navbar-brand">
+    <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+  </div>
+
+  <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="modal" data-target="#navbar-supported-content" aria-controls="navbar-supported-content" aria-expanded="false" aria-label="toggle-navigation">
+    <span class="navbar-toggler-icon open"></span>
+    <span class="sr-only">Open navigation</span>
+  </button>
+
+    <nav class="collapse navbar-collapse">
+      <!-- Full Width Navbar -->
+      <ul class="navbar-nav ml-auto hidden-md-down">
+        <li class="nav-item ">
+          <a class="nav-link" href="/tracks/3?ref=homenav">My courses</a>
+        </li>
+        <li class="nav-item dropdown js-dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Community
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right menu-options pb-0">
+            <li>
+              <a class="drop-down-link accent" target="_blank" rel="noreferrer" href="https://forum.theodinproject.com">
+                <span class="drop-down-logo fas fa-users mt-2"></span>Forum
+</a>            </li>
+            <li>
+              <a class="drop-down-link accent" target="_blank" rel="noreferrer" href="https://discord.gg/hvqVr6d">
+                <span class="drop-down-logo fas fa-comment mt-2"></span>Chat
+</a>            </li>
+          </ul>
+        </li>
+
+        <li class="divider nav-link">|</li>
+        <div class="dropdown js-dropdown">
+  <button class="avatar" aria-label="User Menu" style="background-image:url(/assets/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg)" data-toggle="dropdown"></button>
+  <ul class="dropdown-menu menu-options">
+    <li id="dash-active">
+      <a class="drop-down-link accent active" href="/dashboard">
+        <span class="drop-down-logo dashboard-logo"></span>Dashboard
+</a>    </li>
+    <li>
+      <a class="drop-down-link accent " href="/users/edit">
+        <span class="drop-down-logo settings-logo"></span>Settings
+</a>    </li>
+    <li>
+      <a class="drop-down-link accent" href="/logout?ref=homenav">
+        <span class="drop-down-logo logout-logo"></span>Log out
+</a>    </li>
+  </ul>
+</div>
+
+      </ul>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="nav-spacer"></div>
+
+<div class="container">
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class= 'col-lg-8 offset-lg-2'>
+    <h1 class="text-center camel">My Dashboard</h1>
+    <div class="card-main profile-card">
+  <img class="profile-card__image" src="/assets/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg" />
+  <h2 class="profile-card__username">killroysix</h2>
+  <p class="profile-card__learning-goal">Front end dev skills</p>
+</div>
+
+    <div class="skills-header">
+  <h2 class="skills-header__title">Skills Progress</h2>
+  <p class="skills-header__content">
+    If you're new to web development, take the following courses in the order. Otherwise feel free to start wherever interests you the most.
+  </p>
+</div>
+
+  <div class="skill">
+  <div class='skill__image'>
+      <div class="course-badge progress-circle progress-circle--show-progress" data-progress="40">
+    <div class="progress-circle__inner">
+      <img alt="Web Development 101 badge" class="progress-circle__image" src="/assets/badges/badge-webdev-101-borderless-f5ed56c420ba1dd8eb3d4315b1a04a8d854187c445b49467820ae4055df20810.svg" />
+      <p class="bold progress-circle__content">40%</p>
+      <p class="progress-circle__content">COMPLETE</p>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="skill__details">
+    <a class="skill__link" href="/courses/web-development-101">
+      <h3 class="skill__title">Web Development 101</h3>
+</a>    <span class="skill__sub-title">40 lessons</span>
+  </div>
+
+  <div class="skill__button-wrapper">
+      <a class="button button--primary skill__button" href="/lessons/html-and-css-basics">Resume</a>
+
+  </div>
+</div>
+
+  <div class="skill">
+  <div class='skill__image'>
+      <div class="course-badge">
+    <img alt="Javascript badge" class="course-badge__image" src="/assets/badge-javascript-6b43b0ff1518647c23e4b150c9a9ccd80ac31f73c7011d224a85aae954db2ded.svg" />
+  </div>
+
+  </div>
+
+  <div class="skill__details">
+    <a class="skill__link" href="/courses/javascript">
+      <h3 class="skill__title">Javascript</h3>
+</a>    <span class="skill__sub-title">35 lessons</span>
+  </div>
+
+  <div class="skill__button-wrapper">
+      <a class="button button--primary skill__button" href="/courses/javascript">Start</a>
+
+  </div>
+</div>
+
+  <div class="skill">
+  <div class='skill__image'>
+      <div class="course-badge">
+    <img alt="HTML and CSS badge" class="course-badge__image" src="/assets/badge-html-css-11da8a794b592afc0c015b750bc6446b8e814b5bef47059d84f7109cea9df379.svg" />
+  </div>
+
+  </div>
+
+  <div class="skill__details">
+    <a class="skill__link" href="/courses/html5-and-css3">
+      <h3 class="skill__title">HTML and CSS</h3>
+</a>    <span class="skill__sub-title">31 lessons</span>
+  </div>
+
+  <div class="skill__button-wrapper">
+      <a class="button button--primary skill__button" href="/courses/html5-and-css3">Start</a>
+
+  </div>
+</div>
+
+  <div class="skill">
+  <div class='skill__image'>
+      <div class="course-badge">
+    <img alt="Getting Hired badge" class="course-badge__image" src="/assets/badge-getting-hired-506ba36f872689cc5d305e9987a94579ca3be3eca80aff2fd6c1326292bfe0fc.svg" />
+  </div>
+
+  </div>
+
+  <div class="skill__details">
+    <a class="skill__link" href="/courses/getting-hired">
+      <h3 class="skill__title">Getting Hired</h3>
+</a>    <span class="skill__sub-title">14 lessons</span>
+  </div>
+
+  <div class="skill__button-wrapper">
+      <a class="button button--primary skill__button" href="/courses/getting-hired">Start</a>
+
+  </div>
+</div>
+
+
+<p class="text-center">You are currently enrolled in the Front End Only track. To view all available tracks <a href="/tracks">click here</a></p>
+
+  </div>
+</div>
+
+<div class="gradient">
+
+  <div class="bottom-cta">
+  <p class="bottom-cta__heading">Have a question?</p>
+
+  <p class="bottom-cta__sub-heading">Chat with our friendly Odin community in our Discord chatrooms!</p>
+  <a class="button button--secondary" target="_blank" rel="noreferrer" href="https://discord.gg/hvqVr6d">Open Discord</a>
+</div>
+
+</div>
+
+    </div>
+
+    <footer id="footer">
+  <div class="footer-brand">
+    <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://github.com/TheOdinProject"><span aria-label="github" class="accent fab fa-github"/></a>
+    <a href="https://discord.gg/hvqVr6d"><span aria-label="discord chat" class="accent fab fa-discord"/></a>
+    <a href="https://www.facebook.com/theodinproject/"><span aria-label="facebook" class="accent fab fa-facebook"/></a>
+    <a href="https://twitter.com/TheOdinProject"><span aria-label="twitter" class="accent fab fa-twitter"/></a>
+  </div>
+  <div class="footer-links">
+    <div class="footer-links-container">
+      <a class="footer-link" href="/about">About</a>
+      <a class="footer-link" href="/faq">FAQ</a>
+      <a target="_blank" rel="noreferrer" class="footer-link" href="https://medium.com/the-odin-project">Blog</a>
+    </div>
+    <div class="footer-links-container">
+      <a class="footer-link" href="/success_stories">Success Stories</a>
+      <a class="footer-link" href="/contributing">Contribute</a>
+      <a class="footer-link" href="/terms_of_use">Terms of Use</a>
+    </div>
+  </div>
+
+</footer>
+
+    <div class="floating-dropdown">
+  <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle='tooltip' data-placement='left' title='Chat'>
+    <a target="_blank" rel="noreferrer" href="https://discord.gg/hvqVr6d">
+      <i class="fas fa-comment"></i>
+</a>  </div>
+  <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle='tooltip' data-placement='left' title='Forum'>
+    <a target="_blank" rel="noreferrer" href="https://forum.theodinproject.com">
+      <i class="fas fa-users" aria-hidden="true"></i>
+</a>  </div>
+  <div class="floating-dropdown__item main-floating-btn">
+    <i class="fas fa-comments" aria-hidden="true"></i>
+  </div>
+</div>
+    <!-- Google Analytics Tracking Snippet -->
+<!-- Only load it if we're in a production environment! -->
+
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41005438-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+  </body>
+</html>
